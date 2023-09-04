@@ -25,17 +25,15 @@ const analyzer = {
   //},
 
   getNumberCount: (text) => {
-  TODO: esta función debe retornar cúantos números se encuentran en el parámetro `text` de tipo `string`.
-  const valor = text.value;
-  const regex = /\d+/g;
-  const matches = valor.match(regex);
-  const count = matches ? matches.length : 0;
-  return count;
+    //TODO: esta función debe retornar cúantos números se encuentran en el parámetro `text` de tipo `string`.
+    const count = text.match(/\b\d+(\.\d+)?\b/g);
+    return count ? count.length : 0;
   },
 
-  //getNumberSum: (text) => {
+  getNumberSum: (text) => {
   //TODO: esta función debe retornar la suma de todos los números que se encuentran en el parámetro `text` de tipo `string`.
-  //},
+  
+  },
 };
 
 export default analyzer;

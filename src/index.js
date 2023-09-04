@@ -9,7 +9,7 @@ const charactercount = document.querySelector(
 const charactercountex = document.querySelector(
   "li[data-testid='character-no-spaces-count']"
 );
-//const numbercount = document.querySelector("li[data-testid='number-count']");
+const numbercount = document.querySelector("li[data-testid='number-count']");
 //const sumnumeros = document.querySelector("li[data-testid='numer-sum']");
 //const longitudmedia = document.querySelector("li[data-testid='word-lenght-average']");
 
@@ -30,9 +30,9 @@ textarea.addEventListener("keyup", () => {
   charactercountex.innerHTML = "Caracteres sin espacios: " + resulcaracteressin;
 
   //CONTADOR DE NÚMEROS
-  //const cantidadnumeros = analyzer.getNumberCount(textarea.value);
+  const cantidadnumeros = analyzer.getNumberCount(textarea.value);
   //console.log(cantidadnumeros);
-  //numbercount.innerHTML = "Números: " + cantidadnumeros;
+  numbercount.innerHTML = "Números: " + cantidadnumeros;
 
   //SUMA NÚMEROS
   //const sumanumeros = analyzer.getNumberSum(textarea.value);
