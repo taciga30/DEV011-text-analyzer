@@ -18,11 +18,12 @@ const analyzer = {
     return textWithoutSpaces.length;
   },
 
-  //getAverageWordLength: (text) => {
+  getAverageWordLength: (text) => {
   //TODO: esta función debe retornar la longitud media de palabras que se encuentran en el parámetro `text` de tipo `string`.
   //¿Cómo se calcula la longitud media de palabras en una cadena de texto?
   //Para calcular la longitud media de palabras en una cadena de texto, primero hay que dividir el texto en palabras individuales. Luego, se calcula la longitud de cada palabra y se suman todas las longitudes. Finalmente, se divide la suma total por el número total de palabras para obtener la longitud media.
-  //},
+  
+},
 
   getNumberCount: (text) => {
     //TODO: esta función debe retornar cúantos números se encuentran en el parámetro `text` de tipo `string`.
@@ -31,8 +32,20 @@ const analyzer = {
   },
 
   getNumberSum: (text) => {
-  //TODO: esta función debe retornar la suma de todos los números que se encuentran en el parámetro `text` de tipo `string`.
-  
+    //TODO: esta función debe retornar la suma de todos los números que se encuentran en el parámetro `text` de tipo `string`.
+
+    const numeros = text.match(/\b\d+(\.\d+)?\b/g);
+    if (!numeros) {
+      return 0;
+    } else {
+      for (let i = 0, l = numeros.length; i < l; i++) {
+        const suma = numeros.reduce(
+          (total, number) => total + parseFloat(number, 10),
+          0
+        );
+        return suma;
+      }
+    }
   },
 };
 

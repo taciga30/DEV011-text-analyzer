@@ -10,8 +10,10 @@ const charactercountex = document.querySelector(
   "li[data-testid='character-no-spaces-count']"
 );
 const numbercount = document.querySelector("li[data-testid='number-count']");
-//const sumnumeros = document.querySelector("li[data-testid='numer-sum']");
-//const longitudmedia = document.querySelector("li[data-testid='word-lenght-average']");
+const sumnumeros = document.querySelector("li[data-testid='numer-sum']");
+const longitudmedia = document.querySelector(
+  "li[data-testid='word-lenght-average']"
+);
 
 //TODO: escuchar eventos del DOM e invocar  los métodos del objeto `analyzer`
 
@@ -35,14 +37,14 @@ textarea.addEventListener("keyup", () => {
   numbercount.innerHTML = "Números: " + cantidadnumeros;
 
   //SUMA NÚMEROS
-  //const sumanumeros = analyzer.getNumberSum(textarea.value);
+  const sumanumeros = analyzer.getNumberSum(textarea.value);
   //console.log(sumanumeros);
-  //sumnumeros.innerHTML = "Suma números: " + sumanumeros;
+  sumnumeros.innerHTML = "Suma números: " + sumanumeros;
 
   //LONGITUD MEDIA
-  //const longitudmed = analyzer.getAverageWordLength(textarea.value);
-  //console.log(longitudmed);
-  //longitudmedia.innerHTML = "Longitud media: " + longitudmed;
+  const longitudmed = analyzer.getAverageWordLength(textarea.value);
+  console.log(longitudmed);
+  longitudmedia.innerHTML = "Longitud media: " + longitudmed;
 });
 
 //BOTÓN PARA LIMPIAR LOS DATOS
