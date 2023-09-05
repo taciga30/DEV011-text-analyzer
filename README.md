@@ -3,6 +3,10 @@ En el siguiente enlace podrás acceder a la visualización del proyecto:
 
 https://taciga30.github.io/DEV011-text-analyzer/src/index
 
+En el siguiente enlace podrás acceder a la visualización del proyecto:
+
+https://taciga30.github.io/DEV011-text-analyzer/src/index
+
 ## Introducción
 
 Este proyecto se desarrolló dentro del contexto del Bootcamp de Desarrollo Web de Laboratoria de DEV011 como proyecto inicial denominado "Text Analyzer" donde a través del desarrollo de este se abarcan unos objetivos de aprendizaje planteados para adquirir unos conocimientos necesarios en HTML, CSS, JavaScript, Web APIs, Git y GitHub, y unos requerimientos mínimos de aceptación.
