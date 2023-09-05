@@ -1,7 +1,5 @@
 # Proyecto 1: "Text Analyzer"
-En el siguiente enlace podrás acceder a la visualización del proyecto:
-
-(https://taciga30.github.io/DEV011-text-analyzer/src/index)
+['Aquí'] (https://taciga30.github.io/DEV011-text-analyzer/src/index) podrás acceder a la visualización del proyecto:
 
 ## Introducción
 
